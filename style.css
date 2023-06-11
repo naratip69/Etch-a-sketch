@@ -3,6 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #container{
@@ -25,5 +26,21 @@ body{
 #btn{
     align-self: flex-start;
     padding: 17px;
+}
+
+#ui{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#color{
+    width: 118px;
+    height: 38px;
+    margin-top: 8px;
+}
+#txt{
+    font-size: 18px;
+    color: antiquewhite;
 }
 
