@@ -1,3 +1,15 @@
 body{
     background-color: lightslategray;
 }
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0;
+}
+
+.paper{
+    background-color: antiquewhite;
+}
+
