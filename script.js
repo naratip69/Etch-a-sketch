@@ -23,7 +23,7 @@ function createGrid( size = 16){
 const btn = document.querySelector("#btn");
 btn.addEventListener("click", ()=>{
     let size = + prompt("Enter Size of Grid (Max is 100)",0);
-    if(typeof(size) !== "number"){
+    if(isNaN(size)){
         alert("Invalid Size");
         return;
     }
