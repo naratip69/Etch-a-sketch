@@ -36,3 +36,5 @@ btn.addEventListener("click", ()=>{
     createGrid(size);
 })
 
+createGrid();
+
