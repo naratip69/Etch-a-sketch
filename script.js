@@ -19,3 +19,20 @@ function createGrid( size = 16){
     }
 }
 
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", ()=>{
+    let size = prompt("Enter Size of Grid (Max is 100)",0);
+    if(typeof(size) !== "number"){
+        alert("Invalid Size");
+        return;
+    }
+    size = (size>100)?100:size;
+    const body = document.querySelector("body");
+    const container = document.querySelector("#container");
+    body.removeChild(container);
+    const newContainer = document.createElement("div");
+    newContainer.setAttribute("id","container");
+    body.appendChild(newContainer);
+    createGrid(size);
+})
+
