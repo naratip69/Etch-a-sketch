@@ -22,4 +22,8 @@ body{
     background-color: antiquewhite;
     flex:  1;
 }
+#btn{
+    align-self: flex-start;
+    padding: 17px;
+}
 
