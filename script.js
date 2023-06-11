@@ -1,6 +1,7 @@
 
 function changeColor(e){
-    this.style.cssText += "background-color:black";
+    const color = document.querySelector("#color");
+    this.style.cssText += `background-color:${color.value}`;
 }
 
 function createGrid( size = 16){
