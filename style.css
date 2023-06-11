@@ -1,15 +1,25 @@
 body{
     background-color: lightslategray;
-}
-
-#container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#container{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.line{
+    width: 500px;
+    flex: 1;
+    display: flex;
+}
 .paper{
     background-color: antiquewhite;
-    flex-shrink: 0;
+    flex:  1;
 }
 

@@ -10,7 +10,7 @@ function createGrid( size = 16){
         line.classList.add("line");
         for( let j=0;j<size;j++){
             const grid = document.createElement("div");
-            grid.style.cssText = `padding:4px;margin:0;border:0;`;
+            grid.style.cssText = `margin:0;border:0;`;
             grid.classList.add("paper");
             grid.addEventListener("mouseenter",changeColor);
             line.appendChild(grid);
@@ -21,7 +21,7 @@ function createGrid( size = 16){
 
 const btn = document.querySelector("#btn");
 btn.addEventListener("click", ()=>{
-    let size = prompt("Enter Size of Grid (Max is 100)",0);
+    let size = + prompt("Enter Size of Grid (Max is 100)",0);
     if(typeof(size) !== "number"){
         alert("Invalid Size");
         return;
